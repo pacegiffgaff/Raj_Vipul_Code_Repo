@@ -1,1 +1,0 @@
-# Student Data Management Application
