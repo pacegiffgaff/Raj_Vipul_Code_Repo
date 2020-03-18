@@ -1,33 +1,115 @@
 package com.casestudy.greatOutdoors.controller;
 
+
+import com.casestudy.greatOutdoors.dao.ProductRepository;
+import com.casestudy.greatOutdoors.entity.Product;
+
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
 class AdminControllerTest {
 
+    private TestData testData = new TestData();
+
+    private ModelMap modelMap = new ModelMap();
+
+    @MockBean
+    ProductRepository mockProductRepository;
+
+    @Autowired
+    AdminController adminController;
+
+    @MockBean
+    HttpServletRequest httpServletRequest;
+
+    @MockBean
+    HttpServletResponse httpServletResponse;
+
+    @MockBean
+    Model model;
+
+
     @Test
-    void showAvailableProducts() {
-       // fail("showAvailableProducts test");
+    void testShowAvailableProducts() {
+
+        int noOfProducts = 5;
+        List<Product> productList = new ArrayList<Product>();
+        int prodReqListSize = 5;
+        for (int i = 0; i < prodReqListSize; i++) {
+            Product product = testData.getProduct(i);
+            productList.add(product);
+        }
+
+        when(mockProductRepository.findAll()).thenReturn(productList);
+
+        String returnAttribute = adminController.showAvailableProducts(modelMap);
+        List<Product> returnProducts =(List<Product>)modelMap.get("products");
+        System.out.println("******** List size:"+returnProducts.size());
+        System.out.println("******** returnAttribute:"+returnAttribute);
+        assertEquals(noOfProducts, returnProducts.size());
+        assertEquals("admin_product_list", returnAttribute);
     }
 
     @Test
-    void showAddNewProductPage() {
-       // fail("showAddNewProductPage test");
+    void testShowAddNewProductPage() {
+
+        String returnAttribute = adminController.showAddNewProductPage(modelMap);
+        System.out.println("******** returnAttribute:"+returnAttribute);
+        assertEquals("admin_add_product", returnAttribute);
     }
 
     @Test
-    void addNewProduct() {
-       // fail("addNewProduct test");
+    void testAddNewProduct() throws IOException {
+        int productCode = 5;
+
+        Product product = testData.getProduct(productCode);
+
+        when(mockProductRepository.save(product)).thenReturn(product);
+        mockProductRepository.save(product);
+
+        //String returnAttribute = adminController.addNewProduct(modelMap,productForm,product);
+        // System.out.println("******** returnAttribute:"+returnAttribute);
+        //assertEquals("redirect:/admin/product", returnAttribute);
+
+        assertEquals(productCode, Integer.valueOf(product.getCode()));
+
     }
 
     @Test
-    void productImage() {
-       // fail("productImage test");
+    void testProductImage() throws  IOException{
+
+        HttpServletRequest request;
+        HttpServletResponse response;
+        String productCode = "77";
+        Product product = testData.getProductWithImage(Integer.valueOf(productCode));
+        when(mockProductRepository.findById(productCode)).thenReturn(java.util.Optional.ofNullable(product));
+        assertEquals(productCode, product.getCode());
+
+        //adminController.productImage(httpServletRequest, httpServletResponse, model ,product.getCode());
+
     }
 
     @Test
-    void showReportsPage() {
-      //  fail("showReportsPage test");
+    void testShowReportsPage() {
+        String returnAttribute = adminController.showReportsPage(modelMap);
+        System.out.println("******** returnAttribute:" + returnAttribute);
+        assertEquals("report_links", returnAttribute);
     }
 }

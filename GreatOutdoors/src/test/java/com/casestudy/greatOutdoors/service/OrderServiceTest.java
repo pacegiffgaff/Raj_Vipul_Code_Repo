@@ -1,11 +1,14 @@
 package com.casestudy.greatOutdoors.service;
 
-import com.casestudy.greatOutdoors.dao.*;
+import com.casestudy.greatOutdoors.controller.TestData;
+import com.casestudy.greatOutdoors.dao.CustomerRepository;
+import com.casestudy.greatOutdoors.dao.OrderRepository;
+import com.casestudy.greatOutdoors.dao.OrderStatusRepository;
+import com.casestudy.greatOutdoors.dao.ProductRepository;
 import com.casestudy.greatOutdoors.entity.Order;
 import com.casestudy.greatOutdoors.entity.OrderStatus;
 import org.junit.Assert;
 import org.junit.Before;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -35,8 +38,6 @@ public class OrderServiceTest {
     @MockBean
     OrderStatusRepository mockOrderStatusRepository;
 
-    @MockBean
-    AccountRepository mockAccountRepository;
 
     @MockBean
     CustomerRepository mockCustomerRepository;
@@ -68,7 +69,7 @@ public class OrderServiceTest {
         int i =202;
         Order order = testData.getOrder(i);
         when(mockOrderRepository.save(order)).thenReturn(order);
-        Order  saveOrder = (Order)mockOrderRepository.save(order);
+        Order saveOrder = (Order)mockOrderRepository.save(order);
         System.out.println("***** Order Id: "+saveOrder.getId());
         Assert.assertEquals(Integer.valueOf(i),order.getId());
 
@@ -80,7 +81,7 @@ public class OrderServiceTest {
         Order order = testData.getOrder(i);
         OrderStatus orderStatus = testData.getOrderStatus(i);
         when(mockOrderRepository.save(orderStatus.getOrder())).thenReturn(order);
-        Order  saveOrder = (Order)mockOrderRepository.save(orderStatus.getOrder());
+        Order saveOrder = (Order)mockOrderRepository.save(orderStatus.getOrder());
         System.out.println("***** Created Order Status: "+saveOrder.getStatus());
         Assert.assertEquals("Initiated303",saveOrder.getStatus());
 
@@ -91,7 +92,7 @@ public class OrderServiceTest {
         int i =111;
         Order order = testData.getOrder(i);
         when(mockOrderRepository.save(order)).thenReturn(order);
-        Order  saveOrder = (Order)mockOrderRepository.save(order);
+        Order saveOrder = (Order)mockOrderRepository.save(order);
         System.out.println("***** PlaceOrder Id: "+saveOrder.getId());
         Assert.assertEquals(Integer.valueOf(i),order.getId());
         Assert.assertEquals("Customer"+i, order.getCustomerName());
