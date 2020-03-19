@@ -71,14 +71,11 @@ public class OrderControllerTest {
         String code = "12";
         Product product = testData.getProduct(Integer.valueOf(code));
         Order order = testData.getOrder(12);
-
         when(mockProductRepository.findById(code)).thenReturn(java.util.Optional.ofNullable(product));
         when(mockOrderRepository.save(order)).thenReturn(order);
         ModelMap modelMap = new ModelMap();
         String returnAttribute = orderController.initiateOrder(code, order,modelMap);
         Order returnOrder = (Order) modelMap.get("order");
-        System.out.println("******** Product Code:"+returnOrder.getProduct().getCode());
-        System.out.println("attributeName:"+returnAttribute);
         assertEquals(code, returnOrder.getProduct().getCode());
         assertEquals("customer_shipping_details", returnAttribute);
     }
@@ -90,13 +87,10 @@ public class OrderControllerTest {
         Order order = testData.getOrder(22);
         when(mockProductRepository.findById(code)).thenReturn(java.util.Optional.ofNullable(order.getProduct()));
         when(mockOrderRepository.save(order)).thenReturn(order);
-
         ModelMap modelMap = new ModelMap();
         String returnAttribute = orderController.placeOrder(modelMap, order, code);
         when(mockProductRepository.save(order.getProduct())).thenReturn(order.getProduct());
         Order returnOrder = (Order) modelMap.get("completedOrder");
-        System.out.println("******** Order Product Code:"+returnOrder.getProduct().getCode());
-        System.out.println("attributeName:"+returnAttribute);
         assertEquals(code, returnOrder.getProduct().getCode());
         assertEquals("success", returnAttribute);
     }
@@ -111,8 +105,6 @@ public class OrderControllerTest {
         ModelMap modelMap = new ModelMap();
         String returnAttribute = orderController.orderStatus(modelMap);
         List<Order> orderHistoryList = (List<Order>) modelMap.get("orderHistory");
-        System.out.println("******** orderHistoryList size:"+orderHistoryList.size());
-        System.out.println("attributeName:"+returnAttribute);
         assertEquals(noOfOrders, orderHistoryList.size());
         assertEquals("order_history", returnAttribute);
     }
@@ -127,7 +119,6 @@ public class OrderControllerTest {
 
         ModelMap modelMap = new ModelMap();
         String returnAttribute = orderController.refundOrder(modelMap, String.valueOf(orderId), flashAttributes);
-        System.out.println("attributeName:"+returnAttribute);
          assertEquals(orderId, order.getId());
          assertEquals("redirect:/order_status", returnAttribute);
     }

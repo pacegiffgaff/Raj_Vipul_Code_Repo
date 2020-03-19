@@ -41,7 +41,6 @@ class OrderControllerWebTest {
         ModelMap modelMap = new ModelMap();
         orderController.showAvailableProducts(modelMap);
         List<Product> returnProducts =(List<Product>)modelMap.get("products");
-        System.out.println("******** size:"+returnProducts.size());
         assertEquals(prodReqListSize, returnProducts.size());
     }
 }

@@ -16,8 +16,6 @@ import java.util.List;
 
 public class TestData {
 
-
-
     public List<Order> getOrders(int noOfOrders) {
 
         List<Order> orders = new ArrayList<Order>();
@@ -33,7 +31,7 @@ public class TestData {
             order.setCustomer(getCustomer(i));
             orders.add(order);
         }
-        System.out.println("##### orders" +orders.size());
+
         return orders;
     }
     public List<Product> getProductList(int size){
@@ -63,53 +61,53 @@ public class TestData {
         return  product;
     }
 
-    public OrderStatus getOrderStatus(int i) {
+    public OrderStatus getOrderStatus(int code) {
         OrderStatus orderStatus = new OrderStatus();
-        Order order = getOrder(i);
+        Order order = getOrder(code);
         orderStatus.setOrder(order);
-        orderStatus.setStatus("Initiated"+i);
+        orderStatus.setStatus("Initiated"+code);
         orderStatus.setUpdatedAt(new Date());
-        orderStatus.setId(i);
+        orderStatus.setId(code);
         return  orderStatus;
     }
 
-    public Order getOrderByStatus(int i, String status){
-        System.out.println("***** init Order *****");
+    public Order getOrderByStatus(int code, String status){
+
         Order order = new Order();
 
-        order.setProduct(getProduct(i));
-        order.setStatus(status+i);
-        order.setBill(Double.valueOf(i));
+        order.setProduct(getProduct(code));
+        order.setStatus(status+code);
+        order.setBill(Double.valueOf(code));
         order.setOrderDate(new Date());
-        order.setId(i);
-        order.setCustomerName("Customer" + i);
-        order.setCustomer(getCustomer(i));
-        System.out.println("***** out Order"+order.getId());
+        order.setId(code);
+        order.setCustomerName("Customer" + code);
+        order.setCustomer(getCustomer(code));
+
         return order;
     }
-    public OrderStatus getOrderStatus(int i, String status) {
+    public OrderStatus getOrderStatus(int code, String status) {
         OrderStatus orderStatus = new OrderStatus();
-        Order order = getOrder(i);
+        Order order = getOrder(code);
         orderStatus.setOrder(order);
-        orderStatus.setStatus(status+i);
+        orderStatus.setStatus(status+code);
         orderStatus.setUpdatedAt(new Date());
-        orderStatus.setId(i);
+        orderStatus.setId(code);
         return  orderStatus;
     }
 
-    public Order getOrder(int i){
-        System.out.println("***** init Order *****");
+    public Order getOrder(int id){
+
         Order order = new Order();
 
-        order.setProduct(getProduct(i));
-        order.setStatus("Initiated" + i);
-        order.setBill(Double.valueOf(i));
+        order.setProduct(getProduct(id));
+        order.setStatus("Initiated" + id);
+        order.setBill(Double.valueOf(id));
         order.setOrderDate(new Date());
-        order.setId(i);
-        order.setCustomerName("Customer" + i);
-        order.setCustomer(getCustomer(i));
+        order.setId(id);
+        order.setCustomerName("Customer" + id);
+        order.setCustomer(getCustomer(id));
         order.setQuantity(5);
-        System.out.println("***** out Order"+order.getId());
+
         return order;
     }
 
@@ -140,12 +138,19 @@ public class TestData {
     public byte[] loadImage() throws IOException {
 
         File file = ResourceUtils.getFile("classpath:config/sample.jpg");
-
-        System.out.println("File Found : " + file.exists());
-
         byte [] data = Files.readAllBytes(file.toPath());
         System.out.println("File Length : " + data.length);
         return  data;
+    }
+
+    public Date getStartDate(){
+
+        return new Date();
+    }
+
+    public Date getEndDate(){
+
+        return new Date();
     }
 
 }

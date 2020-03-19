@@ -62,8 +62,6 @@ class AdminControllerTest {
 
         String returnAttribute = adminController.showAvailableProducts(modelMap);
         List<Product> returnProducts =(List<Product>)modelMap.get("products");
-        System.out.println("******** List size:"+returnProducts.size());
-        System.out.println("******** returnAttribute:"+returnAttribute);
         assertEquals(noOfProducts, returnProducts.size());
         assertEquals("admin_product_list", returnAttribute);
     }
@@ -72,7 +70,6 @@ class AdminControllerTest {
     void testShowAddNewProductPage() {
 
         String returnAttribute = adminController.showAddNewProductPage(modelMap);
-        System.out.println("******** returnAttribute:"+returnAttribute);
         assertEquals("admin_add_product", returnAttribute);
     }
 
@@ -110,7 +107,6 @@ class AdminControllerTest {
     @Test
     void testShowReportsPage() {
         String returnAttribute = adminController.showReportsPage(modelMap);
-        System.out.println("******** returnAttribute:" + returnAttribute);
         assertEquals("report_links", returnAttribute);
     }
 }
