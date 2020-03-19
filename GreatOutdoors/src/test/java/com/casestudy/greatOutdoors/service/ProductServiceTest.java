@@ -1,10 +1,6 @@
 package com.casestudy.greatOutdoors.service;
 
-import com.casestudy.greatOutdoors.controller.TestData;
-import com.casestudy.greatOutdoors.dao.CustomerRepository;
-import com.casestudy.greatOutdoors.dao.OrderRepository;
-import com.casestudy.greatOutdoors.dao.OrderStatusRepository;
-import com.casestudy.greatOutdoors.dao.ProductRepository;
+import com.casestudy.greatOutdoors.dao.*;
 import com.casestudy.greatOutdoors.entity.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +10,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -35,6 +32,8 @@ public class ProductServiceTest {
     @MockBean
     OrderStatusRepository mockOrderStatusRepository;
 
+    @MockBean
+    AccountRepository mockAccountRepository;
 
     @MockBean
     CustomerRepository mockCustomerRepository;

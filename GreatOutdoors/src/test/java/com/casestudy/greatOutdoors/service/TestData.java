@@ -1,4 +1,4 @@
-package com.casestudy.greatOutdoors.controller;
+package com.casestudy.greatOutdoors.service;
 
 import com.casestudy.greatOutdoors.entity.Customer;
 import com.casestudy.greatOutdoors.entity.Order;
@@ -7,11 +7,12 @@ import com.casestudy.greatOutdoors.entity.Product;
 import com.casestudy.greatOutdoors.form.ProductForm;
 import org.springframework.util.ResourceUtils;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 public class TestData {
 
@@ -107,6 +108,7 @@ public class TestData {
         order.setId(i);
         order.setCustomerName("Customer" + i);
         order.setCustomer(getCustomer(i));
+        order.setQuantity(5);
         System.out.println("***** out Order"+order.getId());
         return order;
     }
