@@ -19,7 +19,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
 
 
-        auth.inMemoryAuthentication().withUser("vipul").password("{noop}root")
+        auth.inMemoryAuthentication().withUser("BookMan").password("{noop}root")
                 .roles("USER", "ADMIN");
 
         auth.inMemoryAuthentication().withUser("test").password("{noop}root")
