@@ -53,7 +53,7 @@ External Tools : Docker
 Dockerfile specifies how the application is built and packaged
 
 URL:
-http://localhost:9091/admin/product
-http://localhost:9091/customer/product
+Admin: http://localhost:9090/admin/product
+Customer : http://localhost:9090/customer/product
 
 
