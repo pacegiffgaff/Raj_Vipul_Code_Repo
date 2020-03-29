@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72b5167d-f5ac-418a-897f-21e249645429" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Yyw3XRPWhizaY1T9w79OW7IYjz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-boot-microservices" />
+  </component>
+  <component name="RunManager" selected="Application.Application (1)">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.giffgaff.springsecurity.Application" />
+      <module name="registration-login-springboot-security-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.giffgaff.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.javaguides.springboot.springsecurity.Application" />
+      <module name="registration-login-springboot-security-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.javaguides.springboot.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.createUser_By_providingUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="registration-login-springboot-security-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.giffgaff.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.giffgaff.springsecurity" />
+      <option name="MAIN_CLASS_NAME" value="com.giffgaff.springsecurity.ApplicationTests" />
+      <option name="METHOD_NAME" value="createUser_By_providingUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.findAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="registration-login-springboot-security-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.giffgaff.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.giffgaff.springsecurity" />
+      <option name="MAIN_CLASS_NAME" value="com.giffgaff.springsecurity.ApplicationTests" />
+      <option name="METHOD_NAME" value="findAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.test_password_encoder_by_given_password" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="registration-login-springboot-security-thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.giffgaff.springsecurity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.giffgaff.springsecurity" />
+      <option name="MAIN_CLASS_NAME" value="com.giffgaff.springsecurity.ApplicationTests" />
+      <option name="METHOD_NAME" value="test_password_encoder_by_given_password" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="JUnit.ApplicationTests.findAllUsers" />
+        <item itemvalue="JUnit.ApplicationTests.test_password_encoder_by_given_password" />
+        <item itemvalue="JUnit.ApplicationTests.createUser_By_providingUser" />
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72b5167d-f5ac-418a-897f-21e249645429" name="Default Changelist" comment="" />
+      <created>1583927942335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583927942335</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="525" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1584004702880">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="525" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1584004702880" />
+    <state x="450" y="110" key="FileChooserDialogImpl" timestamp="1585211875000">
+      <screen x="0" y="0" width="1296" height="596" />
+    </state>
+    <state x="450" y="109" key="FileChooserDialogImpl/0.0.1296.592@0.0.1296.592" timestamp="1585171858413" />
+    <state x="450" y="110" key="FileChooserDialogImpl/0.0.1296.596@0.0.1296.596" timestamp="1585211875000" />
+    <state x="500" y="188" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1584018142569" />
+    <state width="1247" height="21" key="GridCell.Tab.0.bottom" timestamp="1585133567406">
+      <screen x="0" y="0" width="1296" height="592" />
+    </state>
+    <state width="1247" height="21" key="GridCell.Tab.0.bottom/0.0.1290.592@0.0.1290.592" timestamp="1585005764037" />
+    <state width="1247" height="21" key="GridCell.Tab.0.bottom/0.0.1296.592@0.0.1296.592" timestamp="1585133567406" />
+    <state width="1397" height="143" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1584077093830" />
+    <state width="1493" height="143" key="GridCell.Tab.0.bottom/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state width="1247" height="21" key="GridCell.Tab.0.center" timestamp="1585133567406">
+      <screen x="0" y="0" width="1296" height="592" />
+    </state>
+    <state width="1247" height="21" key="GridCell.Tab.0.center/0.0.1290.592@0.0.1290.592" timestamp="1585005764037" />
+    <state width="1247" height="21" key="GridCell.Tab.0.center/0.0.1296.592@0.0.1296.592" timestamp="1585133567406" />
+    <state width="1397" height="143" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1584077093830" />
+    <state width="1493" height="143" key="GridCell.Tab.0.center/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state width="1247" height="21" key="GridCell.Tab.0.left" timestamp="1585133567406">
+      <screen x="0" y="0" width="1296" height="592" />
+    </state>
+    <state width="1247" height="21" key="GridCell.Tab.0.left/0.0.1290.592@0.0.1290.592" timestamp="1585005764036" />
+    <state width="1247" height="21" key="GridCell.Tab.0.left/0.0.1296.592@0.0.1296.592" timestamp="1585133567406" />
+    <state width="1397" height="143" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1584077093830" />
+    <state width="1493" height="143" key="GridCell.Tab.0.left/0.0.1536.682@0.0.1536.682" timestamp="1584099404601" />
+    <state width="1247" height="21" key="GridCell.Tab.0.right" timestamp="1585133567406">
+      <screen x="0" y="0" width="1296" height="592" />
+    </state>
+    <state width="1247" height="21" key="GridCell.Tab.0.right/0.0.1290.592@0.0.1290.592" timestamp="1585005764037" />
+    <state width="1247" height="21" key="GridCell.Tab.0.right/0.0.1296.592@0.0.1296.592" timestamp="1585133567406" />
+    <state width="1397" height="143" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1584077093830" />
+    <state width="1493" height="143" key="GridCell.Tab.0.right/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state width="1493" height="143" key="GridCell.Tab.1.bottom" timestamp="1584099404603">
+      <screen x="0" y="0" width="1536" height="682" />
+    </state>
+    <state width="1397" height="143" key="GridCell.Tab.1.bottom/0.0.1440.860@0.0.1440.860" timestamp="1583991699412" />
+    <state width="1493" height="143" key="GridCell.Tab.1.bottom/0.0.1536.682@0.0.1536.682" timestamp="1584099404603" />
+    <state width="1493" height="143" key="GridCell.Tab.1.center" timestamp="1584099404602">
+      <screen x="0" y="0" width="1536" height="682" />
+    </state>
+    <state width="1397" height="143" key="GridCell.Tab.1.center/0.0.1440.860@0.0.1440.860" timestamp="1583991699412" />
+    <state width="1493" height="143" key="GridCell.Tab.1.center/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state width="1493" height="143" key="GridCell.Tab.1.left" timestamp="1584099404602">
+      <screen x="0" y="0" width="1536" height="682" />
+    </state>
+    <state width="1397" height="143" key="GridCell.Tab.1.left/0.0.1440.860@0.0.1440.860" timestamp="1583991699412" />
+    <state width="1493" height="143" key="GridCell.Tab.1.left/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state width="1493" height="143" key="GridCell.Tab.1.right" timestamp="1584099404602">
+      <screen x="0" y="0" width="1536" height="682" />
+    </state>
+    <state width="1397" height="143" key="GridCell.Tab.1.right/0.0.1440.860@0.0.1440.860" timestamp="1583991699412" />
+    <state width="1493" height="143" key="GridCell.Tab.1.right/0.0.1536.682@0.0.1536.682" timestamp="1584099404602" />
+    <state x="427" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1583993941651">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="427" y="258" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1583993941651" />
+    <state x="427" y="186" width="585" height="488" key="find.popup" timestamp="1583997737947">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="427" y="186" width="585" height="488" key="find.popup/0.0.1440.860@0.0.1440.860" timestamp="1583997737947" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/giffgaff/springsecurity/service/UserServiceImpl.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
