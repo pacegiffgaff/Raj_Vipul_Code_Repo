@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dd2bab8b-aa34-4225-84b2-2ada4c56afc7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZcNDrb6vN8uQDFQVQDQ1ZsGY15" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.CarsApplicationTests (1)">
+    <configuration name="CarsApplicationTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.giffgaff.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.giffgaff.cars" />
+      <option name="MAIN_CLASS_NAME" value="com.giffgaff.cars.CarsApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarsApplicationTests.testCreateCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.cars" />
+      <option name="MAIN_CLASS_NAME" value="com.example.cars.CarsApplicationTests" />
+      <option name="METHOD_NAME" value="testCreateCar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarsApplicationTests.testGetAllCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.cars" />
+      <option name="MAIN_CLASS_NAME" value="com.example.cars.CarsApplicationTests" />
+      <option name="METHOD_NAME" value="testGetAllCars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarsApplicationTests.testGetCarById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.cars" />
+      <option name="MAIN_CLASS_NAME" value="com.example.cars.CarsApplicationTests" />
+      <option name="METHOD_NAME" value="testGetCarById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarsApplicationTests.testUpdateCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.cars.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.cars" />
+      <option name="MAIN_CLASS_NAME" value="com.example.cars.CarsApplicationTests" />
+      <option name="METHOD_NAME" value="testUpdateCar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CarsApplicationTests (1)" />
+        <item itemvalue="JUnit.CarsApplicationTests.testUpdateCar" />
+        <item itemvalue="JUnit.CarsApplicationTests.testGetAllCars" />
+        <item itemvalue="JUnit.CarsApplicationTests.testGetCarById" />
+        <item itemvalue="JUnit.CarsApplicationTests.testCreateCar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd2bab8b-aa34-4225-84b2-2ada4c56afc7" name="Default Changelist" comment="" />
+      <created>1585134305503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585134305503</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="379" y="50" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585163049944">
+      <screen x="0" y="0" width="1296" height="592" />
+    </state>
+    <state x="379" y="50" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1296.592@0.0.1296.592" timestamp="1585163049944" />
+    <state width="1236" height="97" key="GridCell.Tab.0.bottom" timestamp="1585214767545">
+      <screen x="0" y="0" width="1304" height="604" />
+    </state>
+    <state width="1241" height="99" key="GridCell.Tab.0.bottom/0.0.1296.592@0.0.1296.592" timestamp="1585171755908" />
+    <state width="1236" height="97" key="GridCell.Tab.0.bottom/0.0.1296.596@0.0.1296.596" timestamp="1585208830120" />
+    <state width="1236" height="97" key="GridCell.Tab.0.bottom/0.0.1304.604@0.0.1304.604" timestamp="1585214767545" />
+    <state width="1236" height="97" key="GridCell.Tab.0.center" timestamp="1585214767545">
+      <screen x="0" y="0" width="1304" height="604" />
+    </state>
+    <state width="1241" height="99" key="GridCell.Tab.0.center/0.0.1296.592@0.0.1296.592" timestamp="1585171755908" />
+    <state width="1236" height="97" key="GridCell.Tab.0.center/0.0.1296.596@0.0.1296.596" timestamp="1585208830120" />
+    <state width="1236" height="97" key="GridCell.Tab.0.center/0.0.1304.604@0.0.1304.604" timestamp="1585214767545" />
+    <state width="1236" height="97" key="GridCell.Tab.0.left" timestamp="1585214767545">
+      <screen x="0" y="0" width="1304" height="604" />
+    </state>
+    <state width="1241" height="99" key="GridCell.Tab.0.left/0.0.1296.592@0.0.1296.592" timestamp="1585171755908" />
+    <state width="1236" height="97" key="GridCell.Tab.0.left/0.0.1296.596@0.0.1296.596" timestamp="1585208830120" />
+    <state width="1236" height="97" key="GridCell.Tab.0.left/0.0.1304.604@0.0.1304.604" timestamp="1585214767545" />
+    <state width="1236" height="97" key="GridCell.Tab.0.right" timestamp="1585214767545">
+      <screen x="0" y="0" width="1304" height="604" />
+    </state>
+    <state width="1241" height="99" key="GridCell.Tab.0.right/0.0.1296.592@0.0.1296.592" timestamp="1585171755908" />
+    <state width="1236" height="97" key="GridCell.Tab.0.right/0.0.1296.596@0.0.1296.596" timestamp="1585208830120" />
+    <state width="1236" height="97" key="GridCell.Tab.0.right/0.0.1304.604@0.0.1304.604" timestamp="1585214767545" />
+  </component>
+</project>

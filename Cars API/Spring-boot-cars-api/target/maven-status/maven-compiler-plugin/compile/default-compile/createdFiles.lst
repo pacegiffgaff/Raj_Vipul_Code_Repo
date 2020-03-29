@@ -1,0 +1,6 @@
+com\giffgaff\cars\exceptions\ResourceNotFoundException.class
+com\giffgaff\cars\SwaggerConfig.class
+com\giffgaff\cars\models\Car.class
+com\giffgaff\cars\CarsApplication.class
+com\giffgaff\cars\controllers\CarController.class
+com\giffgaff\cars\repository\CarRepository.class
