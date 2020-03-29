@@ -1,0 +1,6 @@
+com\giffgaff\moviecatalogservice\models\CatalogItem.class
+com\giffgaff\moviecatalogservice\MovieCatalogServiceApplication.class
+com\giffgaff\moviecatalogservice\models\UserRating.class
+com\giffgaff\moviecatalogservice\models\Movie.class
+com\giffgaff\moviecatalogservice\resources\CatalogResource.class
+com\giffgaff\moviecatalogservice\models\Rating.class
